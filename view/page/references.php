@@ -13,32 +13,16 @@
     </div>
 </header>
 <div class="container">
-    <h3 style="border-bottom: 1px solid #EEEEEE;">Dernière version de My C-Tool</h3>
+   <p>Principaux clients classés par ordre antichronologique (du plus récent au plus ancien). Leur diversité
+       (grand groupe, fédérations de métier, collectivités) est à l'image du large spectre des besoins couverts par
+       nos solutions.</p>
     <ul class="thumbnails" style="margin-top: 30px;">
-        <?php
+<?php
 $images = array(
     array(
         'name' => 'Bolloré logistics',
         'file' => 'bollore_logistics'
     ),
-);
-$thumbnail = '';
-foreach ($images as $image) {
-    $thumbnail .=
-        '<li class="span6">' .
-        '<div class="thumbnail">' .
-        '<img src="./img/references/' . $image['file'] . '".png" alt="' . $image['name']
-        . '" title="' . $image['name'] . '" />' .
-        '</div>' .
-        '</li>';
-}
-echo $thumbnail;
-?>
-    </ul>
-    <h3 style="border-bottom: 1px solid #EEEEEE;">Versions précédentes de My C-Tool</h3>
-    <ul class="thumbnails" style="margin-top: 30px;">
-<?php
-$images = array(
     array(
         'name' => 'Fédération Française des Spiritueux',
         'file' => 'ffs'

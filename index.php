@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by JetBrains PhpStorm.
+ * User: erisler
+ * Date: 19/05/13
+ * Time: 08:46
+ * To change this template use File | Settings | File Templates.
+ */
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +22,7 @@
     <body data-target=".bs-docs-sidebar" data-spy="scroll" data-twttr-rendered="true">
 <?php
 include("view/menu.php");
-$pages = array('home', 'contact', 'societe', 'references', 'solution');
+$pages = array('home', 'solution', 'societe', 'references', 'contact', 'myCLabs');
 if (!isset($_GET['page']) || !in_array($_GET['page'], $pages))
 {
     include_once('view/page/home.php');

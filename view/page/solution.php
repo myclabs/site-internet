@@ -9,9 +9,8 @@
 ?>
 <header class="subhead">
     <div class="container">
-        <h1>My C-Tool</h1>
-        <p>La puissance et l'ergonomie d'une application Web moderne.</p>
-        <p>La souplesse d'un tableur excel.</p>
-        <p>La rigueur et l'auditabilité d'une application comptable traditionnelle.</p>
+        <h1>Solution</h1>
+        <p>Notre ambition&nbsp;: combiner puissance et ergonomie d'une application Web, souplesse
+        d'un tableur, rigueur et auditabilité d'une application comptable traditionnelle.</p>
     </div>
 </header>

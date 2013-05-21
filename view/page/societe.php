@@ -9,7 +9,7 @@
 ?>
 <header class="subhead">
     <div class="container">
-        <h1>My C-Sense</h1>
+        <h1>Société</h1>
         <p>Recherche, innovation, expertise.</p>
     </div>
 </header>
@@ -20,10 +20,11 @@
             <ul>
                 <li>2009 : Création.</li>
                 <li>Statut de <abbr title="Jeune Entreprise Innovante">JEI</abbr>.</li>
-                <li>2012 : Obtention d'une aide à l'innovation OSÉO - Rhône-Alpes.</li>
+                <li>2012 : Obtention d'une aide à l'innovation
+                    <a href="http://www.oseo.fr/qui_sommes_nous/nos_equipes_en_region/rhone_alpes">OSÉO - Rhône-Alpes</a>.</li>
                 <li>Trois salariés dont un ingénieur doctorant en thèse CIFRE (menée en collaboration avec le
-                    laboratoire <a href="http://liris.cnrs.fr">LIRIS</a> de
-                    l'<a href="http://www.universite-lyon.fr/">Université de Lyon</a>).</li>
+                    laboratoire <a href="http://liris.cnrs.fr">LIRIS</a> à
+                    l'<a href="http://www.insa-lyon.fr">INSA de Lyon</a>).</li>
                 <li>Notre activité de R&D constante depuis la création témoigne de notre ambition de vous faire
                     bénéficier d'un service à la pointe, tant sur le plan informatique que sur le plan de l'expertise
                     comptable extra-financière.</li>

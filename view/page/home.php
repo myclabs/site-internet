@@ -9,7 +9,7 @@
 ?>
 <header class="subhead">
     <div class="container">
-        <h1>My C-Tool</h1>
+        <h1>My C-Sense</h1>
         <p>Solution Web de reporting extra-financier</p>
     </div>
 </header>
@@ -48,8 +48,8 @@
         <div class="span6">
             <h2>Transparente</h2>
             <p>Détail des calculs effectués, valeurs et sources des paramètres utilisés,
-                documents justificatifs&nbsp;: avec My C-Tool, votre reporting extra-financier devient facilement
-                auditable.</p>
+                documents justificatifs, traces des actions utilisateur et des valeurs saisies&nbsp;: avec
+                My C-Tool, votre reporting extra-financier devient réellement auditable.</p>
         </div>
     </div>
     <div class="row">
@@ -61,7 +61,8 @@
         </div>
         <div class="span6">
             <h2>Économique</h2>
-            <p>Coûts de déploiement et de configuration optimisés et forte implication dans le logiciel libre
+            <p>Coûts de déploiement et de configuration optimisés et implication dans le
+                <a href="index.php?page=myCLabs">logiciel libre</a>
             nous permettent de vous proposer nos solutions au meilleur prix.</p>
         </div>
     </div>
