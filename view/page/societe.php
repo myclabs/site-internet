@@ -15,7 +15,7 @@
 </header>
 <div class="container">
     <div class="row">
-        <div class="span7">
+        <div class="span6">
             <h2 style="border-bottom: 1px solid #EEEEEE">Société</h2>
             <ul>
                 <li>2009 : Création.</li>
@@ -30,7 +30,7 @@
                     comptable extra-financière.</li>
             </ul>
         </div>
-        <div class="span5">
+        <div class="span6">
             <h2 style="border-bottom: 1px solid #EEEEEE">Parcours des fondateurs</h2>
             <h3>Irène Kryze</h3>
             <ul>

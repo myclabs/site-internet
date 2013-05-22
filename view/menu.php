@@ -17,6 +17,9 @@
                         <a href="./index.php">My C-Tool</a>
                     </li> -->
                     <li>
+                        <a href="./index.php">Accueil</a>
+                    </li>
+                    <li>
                         <a href="./index.php?page=solution">Solution</a>
                     </li>
                     <li>

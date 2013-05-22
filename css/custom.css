@@ -20,8 +20,15 @@
 .container p, .container li {
     font-size: 16px;
 }
+.container .row {
+    margin-top: 25px;
+}
 h1, h2, h3, h4, h5, h6 {
     /* text-rendering: optimizelegibility; */
+}
+h2 {
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 9px;
 }
 .modal-footer {
     margin-top: 20px;
