@@ -9,7 +9,7 @@
 ?>
 <header class="subhead">
     <div class="container">
-        <h1>My C-Sense</h1>
+        <h1><i class="icon-cloud icon-white"></i> My C-Sense</h1>
         <p>Éditeur de My C-Tool&nbsp;: solution Web de reporting extra-financier</p>
     </div>
 </header>
@@ -25,7 +25,7 @@
                 établissement public&nbsp;:
                 <br/><span class="text-success">My C-Tool
                 s'adapte à votre structure.</span></p>
-            <p class="lead" style="font-size: 25px;"><i class="icon-crop"></i>  <br/>Activité, projet, événement, produit, service, procédé&nbsp;: 
+            <p class="lead" style="font-size: 25px;"><i class="icon-crop"></i>  <br/>Exercice comptable, projet, événement, produit, service, procédé&nbsp;: 
                 <br/><span class="text-success">My C-Tool s'adapte à votre périmètre de suivi.</span></p>
         </div>
     </div>
@@ -34,7 +34,7 @@
             <h2><i class="icon-smile"></i> Simple</h2>
             <p>Accès par navigateur sans installation préalable, interfaces de saisie et d'analyse intuitives,
                 aides en ligne personnalisées.</p>
-            <h2><i class="icon-fighter-jet"></i> Puissant</h2>
+            <h2><i class="icon-bolt"></i> Puissant</h2>
             <p>Interface multilingue, collecte décentralisée, suivi de la collecte,
                 imports/exports, analyses et rapports ad hoc en quelques clics, disponibles à tous les niveaux souhaités
                 de votre organisation, mise en place et suivi d'un plan d'actions.</p>
@@ -46,12 +46,12 @@
         <div class="span6">
             <h2><i class="icon-cogs"></i> Ouvert</h2>
             <p>La configuration de notre solution est si simple qu’elle peut être
-                confiée à nos partenaires (bureaux d’études) et/ou à nos clients. Avec My C-Tool, vous gardez
+                confiée en totalité à nos partenaires (bureaux d’études) et/ou à nos clients. Avec My C-Tool, vous gardez
                 la main.</p>
             <h2><i class="icon-eye-open"></i> Transparent</h2>
             <p>Détail des calculs effectués, valeurs et sources des paramètres utilisés,
                 documents justificatifs, traces des actions utilisateur et des valeurs saisies&nbsp;: avec
-                My C-Tool, votre reporting extra-financier devient réellement auditable.</p>
+                My C-Tool, votre reporting extra-financier devient 100% auditable.</p>
             <h2><i class="icon-shopping-cart"></i> Économique</h2>
             <p>Coûts de déploiement et de configuration optimisés et implication dans le
                 <a href="index.php?page=myCLabs">logiciel libre</a>

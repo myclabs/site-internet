@@ -10,7 +10,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="./index.php" style="color: #ffffff">My C-Sense</a>
+            <a class="brand" href="./index.php" style="color: #ffffff"><i class="icon-cloud icon-white"></i> My C-Sense</a>
             <div class="nav-collapse">
                 <ul class="nav">
                     <!-- <li>
