@@ -1,0 +1,14 @@
+section.separator {
+    margin: 0 0;
+    padding: 30px 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #454545;
+}
+
+footer {
+    margin-top: 40px;
+}
