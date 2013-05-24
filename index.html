@@ -93,7 +93,7 @@
                                 <input type="text" class="input-xxlarge" placeholder="Email">
                                 <button type="submit" class="btn btn-large btn-primary">S'inscrire à la démo</button>
                             </div>
-                            <a href="#contact" class="btn btn-large btn-info">Plus d'informations</a>
+                            <a href="#contact" class="more-infos btn btn-large btn-info">Plus d'informations</a>
                         </form>
                     </div>
                 </div>
@@ -390,6 +390,17 @@
     <script src="js/libs/bootstrap.min.js"></script>
     <script src="js/libs/jquery.placeholder.min.js"></script>
     <script src="js/app.js"></script>
+
+    <script>
+        $(".more-infos").click(function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $("form#contact").offset().top
+            }, 1000, function() {
+                $("form#contact input").first().focus();
+            });
+        });
+    </script>
 
 </body>
 </html>
