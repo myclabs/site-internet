@@ -49,8 +49,15 @@ footer {
         padding: 14px 24px;
     }
 }
+.introduction {
+    border-bottom: 1px solid #C4C4C4;
+    margin-bottom: 0;
+}
 .feature h3 {
     font-size: 24px;
+}
+section.separator{
+    padding: 20px 0 0 0;
 }
 
 /* Images "références client" */
