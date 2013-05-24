@@ -12,3 +12,8 @@ section h2 {
 footer {
     margin-top: 40px;
 }
+
+/* Images "références client" */
+.thumbnail.client img {
+    height: 70px;
+}
