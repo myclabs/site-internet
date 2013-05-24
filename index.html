@@ -87,14 +87,16 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="span12">
-                        <form class="form-inline">
-                            <div class="input-append">
-                                <input type="text" class="input-xxlarge" placeholder="Email">
-                                <button type="submit" class="btn btn-large btn-primary">S'inscrire à la démo</button>
+                    <div class="span8">
+                        <form>
+                            <div class="input-append" style="display: auto">
+                                <input type="text" placeholder="Email" style="width:60%;">
+                                <button type="submit" class="btn btn-primary" style="width:40%;">S'inscrire à la démo</button>
                             </div>
-                            <a href="#contact" class="more-infos btn btn-large btn-info">Plus d'informations</a>
                         </form>
+                    </div>
+                    <div class="span4">
+                        <a href="#contact" class="more-infos btn btn-block btn-info">Plus d'informations</a>
                     </div>
                 </div>
             </div>
@@ -393,7 +395,6 @@
 
     <script>
         $(".more-infos").click(function(e) {
-            e.preventDefault();
             $('html, body').animate({
                 scrollTop: $("form#contact").offset().top
             }, 1000, function() {

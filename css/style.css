@@ -13,6 +13,12 @@ footer {
     margin-top: 40px;
 }
 
+/* Fix hero unit */
+.hero-unit {
+    padding: 0;
+    padding-top: 24px;
+}
+
 /* Call to action */
 .hero-unit .btn, .hero-unit input {
     font-size: 24px;
@@ -30,6 +36,13 @@ footer {
     -webkit-border-radius: 0 6px 6px 0;
     -moz-border-radius: 0 6px 6px 0;
     border-radius: 0 6px 6px 0;
+}
+@media (max-width: 979px) {
+    .hero-unit .btn, .hero-unit input {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 14px 24px;
+    }
 }
 
 /* Images "références client" */
