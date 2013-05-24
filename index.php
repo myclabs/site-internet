@@ -138,7 +138,9 @@ if (isset($_POST['contact-email'])) {
                         <form action="" method="post">
                             <div class="input-append" style="display: auto">
                                 <input type="text" name="demo-email" placeholder="Email" style="width:60%;">
-                                <button type="submit" class="btn btn-primary" style="width:40%;">Démo en ligne</button>
+                                <button type="submit" class="btn btn-primary" style="width:40%;">
+                                    Démo en ligne (s'inscrire)
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -240,13 +242,14 @@ if (isset($_POST['contact-email'])) {
         </div>
     </section>
 
+    <!--
     <section class="separator">
         <div class="container">
             <div class="row">
                 <div class="span8">
-                    <div id="myCarousel" class="carousel slide">
+                    <div id="myCarousel" class="carousel slide"> -->
                         <!-- Carousel items -->
-                        <div class="carousel-inner">
+                        <!--<div class="carousel-inner">
                             <div class="active item">
                                 <img src="captures/1.png">
                                 <div class="carousel-caption">
@@ -268,8 +271,8 @@ if (isset($_POST['contact-email'])) {
                                     <p>Super feature</p>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Carousel nav -->
+                        </div> -->
+                        <!-- Carousel nav --> <!--
                         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
                         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
                     </div>
@@ -286,13 +289,13 @@ if (isset($_POST['contact-email'])) {
             </div>
         </div>
     </section>
+    -->
 
     <section class="separator">
         <div class="container">
 
             <h2>
-                <small>Ils nous ont fait confiance</small>
-                Clients
+                <small>Clients</small>
             </h2>
 
             <ul class="thumbnails">
@@ -334,7 +337,7 @@ if (isset($_POST['contact-email'])) {
             </ul>
 
             <h2>
-                Soutiens / partenaires institutionnels
+                <small>Soutiens / partenaires institutionnels</small>
             </h2>
 
             <ul class="thumbnails">
@@ -385,9 +388,9 @@ if (isset($_POST['contact-email'])) {
 
             <form id="contact" action="#contact" method="post">
                 <fieldset>
-                    <label>Votre email (pour que nous puissions vous répondre)</label>
+                    <label>Email</label>
                     <input name="contact-email" type="text" placeholder="Email" class="input-block-level">
-                    <label>Sujet</label>
+                    <label>Message</label>
                     <textarea name="contact-text" class="input-block-level" rows="5"></textarea>
                     <button type="submit" class="btn">Envoyer</button>
                 </fieldset>
@@ -398,19 +401,7 @@ if (isset($_POST['contact-email'])) {
     <footer>
         <div class="container">
             <div class="row">
-                <div class="span4">
-                    <div class="footer-col-1">
-                        <h3>Newsletter Registration</h3>
-
-                        <form class="form-newsletter">
-                            <div class="input-append">
-                                <input type="text" class="span3 newsletter-input" placeholder="Email Address">
-                                <button type="submit" class="btn">Sign Up</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="span4">
+                <div class="span12">
                     <div class="footer-col-2">
                         <address>
                             <i class="icon-map-marker"></i>
@@ -420,18 +411,6 @@ if (isset($_POST['contact-email'])) {
                         </address>
                     </div>
                 </div>
-                <div class="span4">
-                    <div class="footer-col-3">
-                        <ul class="social">
-                            <li class="facebook"><a href="">Facebook</a></li>
-                            <li class="twitter"><a href="">Twitter</a></li>
-                            <li class="linkedin"><a href="">LinkedIn</a></li>
-                            <li class="youtube"><a href="">You Tube</a></li>
-                            <li class="dribble"><a href="">Twitter</a></li>
-                            <li class="rss"><a href="">RSS</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -439,9 +418,6 @@ if (isset($_POST['contact-email'])) {
             <div class="container">
                 <div class="row">
                     <p class="pull-left">&copy; 2013 My C-Sense</p>
-
-                    <!-- <p class="pull-right">This template was Made by <a
-                            href="http://madebyhoundstooth.com">Houndstooth</a></p> -->
                 </div>
             </div>
         </div>
