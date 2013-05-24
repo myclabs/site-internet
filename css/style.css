@@ -33,3 +33,9 @@ footer {
 .thumbnail.client img {
     height: 70px;
 }
+.thumbnail.client {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
