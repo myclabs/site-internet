@@ -20,7 +20,7 @@ footer {
 /* Fix hero unit */
 .hero-unit {
     padding: 0;
-    padding-top: 24px;
+    padding-top: 5px;
     margin-bottom: 15px;
 }
 
@@ -42,6 +42,7 @@ footer {
     -moz-border-radius: 0 6px 6px 0;
     border-radius: 0 6px 6px 0;
 }
+
 @media (max-width: 979px) {
     .hero-unit .btn, .hero-unit input {
         font-size: 20px;
@@ -69,6 +70,12 @@ section.separator{
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+}
+a {
+    color: #62A4E3;
+}
+a.hover {
+    text-decoration:underline;
 }
 footer .colophon .container .row {
     margin-left: 0;

@@ -1,13 +1,17 @@
 <?php
 $demo = false;
 $contact = false;
+foreach ($_POST as $key => $value) {
+    $_POST[$key] = htmlentities($value);
+}
 if (isset($_POST['demo-email'])) {
     $headers ='Content-Type: text/plain; charset="utf-8"'."\n"; // ici on envoie le mail au format texte encodé en UTF-8
     $headers .='Content-Transfer-Encoding: 8bit'."\n"; // ici on précise qu'il y a des caractères accentués
 
-    $to = "contact@myc-sense.com";
-    $subject  = "Demande d'inscription de la part de " . $_POST['demo-email'];
-    $body = "Demande d'inscription de la part de " . $_POST['demo-email'];
+    $to = "emmanuel.risler@myc-sense.com";
+    $subject  = "Demande d'inscription à une démonstration de la part de : ".$_POST['demo-email'];
+    $body = "Un utilisateur a déposé une demande de démonstration sur le site vitrine.\n\n".
+        "Adresse e-mail indiquée : " . $_POST['demo-email'];
     $headers = $headers.'From: '.$_POST['demo-email']."\n".'Reply-To: '.$_POST['demo-email'];
     // Envoi
     mail($to, $subject, $body, $headers);
@@ -21,13 +25,16 @@ if (isset($_POST['contact-email'])) {
     $body = $_POST['contact-text'];
 
     $email['mcs']['address'] = "contact@myc-sense.com";
-    $email['mcs']['subject']  = "Demande d'informations de la part de ".$userEmail;
+    $email['mcs']['subject']  = "Demande d'informations de la part de : ".$userEmail;
     $email['mcs']['body'] = $body;
     $email['mcs']['headers'] = $headers.'From: '.$userEmail."\n".'Reply-To: '.$userEmail;
 
     $email['user']['address'] = $userEmail;
     $email['user']['subject'] = "Votre message pour My C-Sense";
-    $email['user']['body'] = "Les informations suivantes ont été transmises sur la page de contact du site www.myc-sense.com.\n\n".$body;
+    $email['user']['body'] = "Les informations suivantes ont été transmises sur la page de contact du site www.myc-sense.com.\n\n"
+        ."Adresse e-mail : ".$userEmail."\n\n"
+        ."---------- Début du message ----------\n\n".$body."\n\n"."---------- Fin du message ----------\n\n"
+        . "Nous espérons que vous êtes bien à l'origine de cette demande et reprendrons contact avec vous dans les meilleurs délais.";
     $email['user']['headers'] = $headers.'From: My C-Sense <contact@myc-sense.com>'."\n".'Reply-To: My C-Sense <contact@myc-sense.com>';
     // Envoi
     mail($email['mcs']['address'], $email['mcs']['subject'], $email['mcs']['body'], $email['mcs']['headers']);
@@ -79,7 +86,7 @@ if (isset($_POST['contact-email'])) {
 
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right">
-                                <li class="active"><a href=""><i class="icon-cloud"></i> My C-Sense</a></li>
+                                <li class="active"><a href=""><img src="Logo.png" alt="Logo My C-Sense" width="70px" height="70px"/> My C-Sense</a></li>
                             </ul>
                         </div>
                     </div>
@@ -91,9 +98,9 @@ if (isset($_POST['contact-email'])) {
                     <div class="span12">
                         <header>
                             <hgroup>
-                                <h1>
+                                <h1 style="line-height: 10px">
                                     My C-Tool
-                                    <small>Solution Web de reporting extra-financier</small>
+                                    <small style="color: #454545;">Solution Web de reporting extra-financier</small>
                                 </h1>
 
                                 <h2>
@@ -102,18 +109,18 @@ if (isset($_POST['contact-email'])) {
                                     bilan carbone, énergie, eau, déchets,
                                     <abbr title="Qualité, Hygiène, Sécurité, Environnement">QHSE</abbr>,
                                     <abbr title="Responsabilité Sociale et Environnementale">RSE</abbr>
-                                    <br/><small>My C-Tool s'adapte à votre besoin.</small>
+                                    <br/><small><strong>My C-Tool s'adapte à votre besoin.</strong></small>
                                 </h2>
 
                                 <h2>
-                                    Grande entreprise, PME, fédération de métier, collectivité,
+                                    Grande entreprise, PME, fédération professionnelle, collectivité,
                                     établissement public
-                                    <br/><small>My C-Tool s'adapte à votre structure.</small>
+                                    <br/><small><strong>My C-Tool s'adapte à votre structure.</strong></small>
                                 </h2>
 
                                 <h2>
                                     Exercice comptable, projet, événement, produit, service, procédé
-                                    <br/><small>My C-Tool s'adapte à votre périmètre de suivi.</small>
+                                    <br/><small><strong>My C-Tool s'adapte à votre périmètre de suivi.</strong></small>
                                 </h2>
                             </hgroup>
 
@@ -126,20 +133,28 @@ if (isset($_POST['contact-email'])) {
                 <?php if ($demo) : ?>
                     <div class="row">
                         <div class="span12">
-                            <div class="alert alert-success">
+                            <div class="alert alert-success" style="font-size: 14px; line-height: 24px; font-weight: normal;">
                                 <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                Votre demande d'inscription pour la démo en ligne a été envoyée.
+                                Votre demande d'inscription pour une démonstration en ligne a bien été envoyée, merci
+                                pour votre intérêt.
+                                Nous vous recontacterons dans les meilleurs délais à l'adresse e-mail indiquée&nbsp;:
+                                <strong><?=$_POST['demo-email']?></strong>.
                             </div>
                         </div>
                     </div>
                 <?php endif; ?>
                 <div class="row">
                     <div class="span8">
-                        <form action="" method="post">
+                        <small><strong>Démonstration en ligne</strong></small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span8">
+                        <form action="#" method="post">
                             <div class="input-append" style="display: auto">
-                                <input type="text" name="demo-email" placeholder="Email" style="width:60%;">
+                                <input type="email" name="demo-email" placeholder="Email" required="true" style="width:60%;">
                                 <button type="submit" class="btn btn-primary" style="width:40%;">
-                                    Démo en ligne (s'inscrire)
+                                    S'inscrire
                                 </button>
                             </div>
                         </form>
@@ -378,18 +393,33 @@ if (isset($_POST['contact-email'])) {
                 <small>Plus d'informations</small>
                 Contactez-nous
             </h2>
+            <p style="a:hover {text-decoration: underline;} ">Vous pouvez nous contacter directement à l'adresse&nbsp;:
+                <script type="text/javascript">
+                    <!--
+                    // protected email script by Joe Maller
+                    // JavaScripts available at http://www.joemaller.com
+                    // this script is free to use and distribute
+                    // but please credit me and/or link to my site
 
+                    emailE='myc-sense.com'
+                    emailE=('contact' + '@' + emailE)
+                    document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+                    //-->
+                </script>
+                ou utiliser le formulaire ci-dessous.</p>
             <?php if ($contact) : ?>
                 <div class="alert alert-success">
                     <button type="button" class="close" data-dismiss="alert">&times;</button>
-                    Votre message a bien été envoyé. Merci.
+                    Votre message a bien été envoyé, merci pour votre intérêt. Un e-mail de confirmation vous a été envoyé à
+                    l'adresse e-mail indiquée&nbsp;: <strong><?=$userEmail?></strong> (attention le délai avant réception peut être de quelques minutes).
+                    Nous vous recontacterons à cette même adresse dans les meilleurs délais.
                 </div>
             <?php endif; ?>
 
             <form id="contact" action="#contact" method="post">
                 <fieldset>
-                    <label>Email</label>
-                    <input name="contact-email" type="text" placeholder="Email" class="input-block-level">
+                    <label>Adresse e-mail</label>
+                    <input name="contact-email" type="email" required="true" placeholder="Email" class="input-block-level">
                     <label>Message</label>
                     <textarea name="contact-text" class="input-block-level" rows="5"></textarea>
                     <button type="submit" class="btn">Envoyer</button>
