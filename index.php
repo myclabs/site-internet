@@ -8,9 +8,9 @@ if (isset($_POST['demo-email'])) {
     $headers ='Content-Type: text/plain; charset="utf-8"'."\n"; // ici on envoie le mail au format texte encodé en UTF-8
     $headers .='Content-Transfer-Encoding: 8bit'."\n"; // ici on précise qu'il y a des caractères accentués
 
-    $to = "emmanuel.risler@myc-sense.com";
+    $to = "contact@myc-sense.com";
     $subject  = "Demande d'inscription à une démonstration de la part de : ".$_POST['demo-email'];
-    $body = "Un utilisateur a déposé une demande de démonstration sur le site vitrine.\n\n".
+    $body = "Un utilisateur a déposé une demande d'inscription à une démonstration sur le site www.myc-sense.com.\n\n".
         "Adresse e-mail indiquée : " . $_POST['demo-email'];
     $headers = $headers.'From: '.$_POST['demo-email']."\n".'Reply-To: '.$_POST['demo-email'];
     // Envoi
@@ -26,7 +26,9 @@ if (isset($_POST['contact-email'])) {
 
     $email['mcs']['address'] = "contact@myc-sense.com";
     $email['mcs']['subject']  = "Demande d'informations de la part de : ".$userEmail;
-    $email['mcs']['body'] = $body;
+    $email['mcs']['body'] = "Un utilisateur a déposé une demande d'informations sur le site www.myc-sense.com.\n\n"
+        ."Adresse e-mail indiquée : ".$userEmail."\n\n"
+        ."---------- Début du message ----------\n\n".$body."\n\n"."---------- Fin du message ----------";
     $email['mcs']['headers'] = $headers.'From: '.$userEmail."\n".'Reply-To: '.$userEmail;
 
     $email['user']['address'] = $userEmail;
@@ -71,6 +73,8 @@ if (isset($_POST['contact-email'])) {
 </head>
 
 <body>
+
+<?php include_once("analyticstracking.php") ?>
 
     <section class="introduction" role="main">
         <div class="hero-unit">
