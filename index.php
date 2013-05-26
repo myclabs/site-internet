@@ -90,7 +90,7 @@ if (isset($_POST['contact-email'])) {
 
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right">
-                                <li class="active"><a href=""><img src="Logo.png" alt="Logo My C-Sense" width="70px" height="70px"/> My C-Sense</a></li>
+                                <li class="active"><a href=""><img src="logo.png" alt="Logo My C-Sense" width="180px" height="70px"/></a></li>
                             </ul>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ if (isset($_POST['contact-email'])) {
                             <hgroup>
                                 <h1 style="line-height: 10px">
                                     My C-Tool
-                                    <small style="color: #454545;">Solution Web de reporting extra-financier</small>
+                                    <small style="color: #454545; font-size:32px;">Solution Web de reporting extra-financier</small>
                                 </h1>
 
                                 <h2>
@@ -422,10 +422,10 @@ if (isset($_POST['contact-email'])) {
 
             <form id="contact" action="#contact" method="post">
                 <fieldset>
-                    <label>Adresse e-mail</label>
-                    <input name="contact-email" type="email" required="true" placeholder="Email" class="input-block-level">
-                    <label>Message</label>
-                    <textarea name="contact-text" class="input-block-level" rows="5"></textarea>
+                    <label for="contact-email">Adresse e-mail</label>
+                    <input id="contact-email" name="contact-email" type="email" required="true" placeholder="Adresse e-mail" class="input-block-level">
+                    <label for="contact-text">Message</label>
+                    <textarea id="contact-text" name="contact-text" class="input-block-level" rows="5" placeholder="Message"></textarea>
                     <button type="submit" class="btn">Envoyer</button>
                 </fieldset>
             </form>
