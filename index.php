@@ -154,7 +154,7 @@ if (isset($_POST['contact-email'])) {
                     <div class="span8">
                         <form action="#" method="post">
                             <div class="input-append" style="display: auto">
-                                <input type="email" name="demo-email" placeholder="Email" required="true" style="width:60%;">
+                                <input type="text" name="demo-email" placeholder="Email" style="width:60%;">
                                 <button type="submit" class="btn btn-primary" style="width:40%;">
                                     S'inscrire
                                 </button>
@@ -396,17 +396,14 @@ if (isset($_POST['contact-email'])) {
                 Contactez-nous
             </h2>
             <p style="a:hover {text-decoration: underline;} ">Vous pouvez nous contacter directement à l'adresse&nbsp;:
-                <script type="text/javascript">
-                    <!--
+                <script>
                     // protected email script by Joe Maller
                     // JavaScripts available at http://www.joemaller.com
                     // this script is free to use and distribute
                     // but please credit me and/or link to my site
-
-                    emailE='myc-sense.com'
-                    emailE=('contact' + '@' + emailE)
-                    document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
-                    //-->
+                    emailE='myc-sense.com';
+                    emailE=('contact' + '@' + emailE);
+                    document.write('<a href="mailto:' + emailE + '">' + emailE + '</a>');
                 </script>
                 ou utiliser le formulaire ci-dessous.</p>
             <?php if ($contact) : ?>
@@ -421,9 +418,9 @@ if (isset($_POST['contact-email'])) {
             <form id="contact" action="#contact" method="post">
                 <fieldset>
                     <label for="contact-email">Adresse e-mail</label>
-                    <input id="contact-email" name="contact-email" type="email" required="true" placeholder="Adresse e-mail" class="input-block-level">
+                    <input id="contact-email" name="contact-email" type="text" class="input-block-level">
                     <label for="contact-text">Message</label>
-                    <textarea id="contact-text" name="contact-text" class="input-block-level" rows="5" placeholder="Message"></textarea>
+                    <textarea id="contact-text" name="contact-text" class="input-block-level" rows="5"></textarea>
                     <button type="submit" class="btn">Envoyer</button>
                 </fieldset>
             </form>
