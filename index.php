@@ -69,7 +69,7 @@ if (isset($_POST['contact-email'])) {
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="imgCustom/favicon.ico">
 </head>
 
 <body>
@@ -90,7 +90,7 @@ if (isset($_POST['contact-email'])) {
 
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right">
-                                <li class="active"><a href=""><img src="logo.png" alt="Logo My C-Sense" width="180px" height="70px"/></a></li>
+                                <li class="active"><a href=""><img src="imgCustom/logo.png" alt="Logo My C-Sense" width="150px" height="50px"/></a></li>
                             </ul>
                         </div>
                     </div>
@@ -99,12 +99,13 @@ if (isset($_POST['contact-email'])) {
 
             <div class="container">
                 <div class="row">
-                    <div class="span12">
+                    <div class="span6">
                         <header>
                             <hgroup>
-                                <h1 style="line-height: 10px">
+                                <h1>
                                     My C-Tool
-                                    <small style="color: #454545; font-size:32px;">Solution Web de reporting extra-financier</small>
+                                    <br/>
+                                    <small>Solution Web de reporting extra-financier</small>
                                 </h1>
 
                                 <h2>
@@ -130,9 +131,9 @@ if (isset($_POST['contact-email'])) {
 
                         </header>
                     </div>
-                    <!-- <div class="span5">
-                        <img src="img/logo.png" alt="Hero Image">
-                    </div> -->
+                    <div class="span6">
+                        <img src="imgCustom/montage.png" alt="Hero Image">
+                    </div>
                 </div>
                 <?php if ($demo) : ?>
                     <div class="row">
