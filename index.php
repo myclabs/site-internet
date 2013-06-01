@@ -122,7 +122,7 @@ if (isset($_POST['contact-email'])) {
                                 </h2>
 
                                 <h2>
-                                    Exercice comptable, projet, événement, produit, service, procédé
+                                    Entité, projet, événement, produit, service, procédé
                                     <br/><small><strong>My C-Tool s'adapte à votre périmètre de suivi.</strong></small>
                                 </h2>
                             </hgroup>
