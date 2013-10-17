@@ -80,7 +80,7 @@ if (isset($_POST['contact-email'])) {
             <div class="navbar">
                 <div class="navbar-inner">
                     <div class="container">
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <a class="btn btn-navbar" data-toggle="visible" data-target=".nav-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -88,7 +88,7 @@ if (isset($_POST['contact-email'])) {
 
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right">
-                                <li class="active"><a href=""><img src="imgCustom/logo.png" alt="Logo My C-Sense" width="150px" height="50px"/></a></li>
+                                <li class="active"><a href="index.php"><img src="imgCustom/logo.png" alt="Logo My C-Sense" width="150px" height="50px"/></a></li>
                             </ul>
                         </div>
                     </div>
@@ -97,40 +97,33 @@ if (isset($_POST['contact-email'])) {
 
             <div class="container">
                 <div class="row">
-                    <div class="span6">
+                    <div class="span8">
                         <header>
                             <hgroup>
                                 <h1>
                                     My C-Tool
                                     <br/>
-                                    <small>Solution Web de reporting extra-financier</small>
+                                    <small>Solution Web de collecte et de reporting extra-financier</small>
                                 </h1>
-
+                                
                                 <h2>
-                                    Reporting développement durable,
-                                    <abbr title="Bilan Gaz à Effet de Serre (réglementaire)">BGES</abbr>,
-                                    bilan carbone, énergie, eau, déchets,
-                                    <abbr title="Qualité, Hygiène, Sécurité, Environnement">QHSE</abbr>,
-                                    <abbr title="Responsabilité Sociale et Environnementale">RSE</abbr>
-                                    <br/><small><strong>My C-Tool s'adapte à votre besoin.</strong></small>
+                                My C-Tool::collecte<br/>
+                                <strong>Gagnez en efficacité sur votre collecte d'informations !</strong><br/>
+                                <a href="collecte.php">En savoir plus sur My C-Tool::collecte &raquo;</a>
+                                </h2>
+                                
+                                <h2>
+                                My C-Tool::reporting<br/>
+                                <strong>Automatisez votre processus d'analyse et de reporting !</strong><br/>
+                                <a href="reporting.php">En savoir plus sur My C-Tool::reporting &raquo;</a>
                                 </h2>
 
-                                <h2>
-                                    Grande entreprise, PME, fédération professionnelle, collectivité,
-                                    établissement public
-                                    <br/><small><strong>My C-Tool s'adapte à votre structure.</strong></small>
-                                </h2>
-
-                                <h2>
-                                    Entité, projet, événement, produit, service, procédé
-                                    <br/><small><strong>My C-Tool s'adapte à votre périmètre de suivi.</strong></small>
-                                </h2>
                             </hgroup>
 
                         </header>
                     </div>
-                    <div class="span6">
-                        <img src="imgCustom/montage.png" alt="Hero Image">
+                    <div class="span4">
+                        <img src="imgCustom/dessin-myc-tool.png" alt="Hero Image">
                     </div>
                 </div>
                 <?php if ($demo) : ?>
@@ -148,11 +141,12 @@ if (isset($_POST['contact-email'])) {
                 <?php endif; ?>
                 <div class="row">
                     <div class="span8">
-                        <small><strong>Démonstration en ligne</strong></small>
+                        <h2>Démonstration en ligne</h2>
+                        <p>Inscrivez-vous pour obtenir accès à une version de démonstration de My C-Tool</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="span8">
+                    <div class="span6">
                         <form action="#" method="post">
                             <div class="input-append" style="display: auto">
                                 <input type="text" name="demo-email" placeholder="Email" style="width:60%;">
@@ -168,8 +162,51 @@ if (isset($_POST['contact-email'])) {
                 </div>
             </div>
         </div>
+<section class="separator">
+        <div class="container features separator">
 
-        <div class="container features">
+            <div class="row">
+                <div class="span4">
+                    <div class="feature">
+                        <h3>
+                            My C-Tool s'adapte à votre besoin
+                        </h3>
+
+                        <p>
+                            Reporting développement durable,
+                            <abbr title="Bilan Gaz à Effet de Serre (réglementaire)">BGES</abbr>,
+                            bilan carbone, énergie, eau, déchets,
+                            <abbr title="Qualité, Hygiène, Sécurité, Environnement">QHSE</abbr>,
+                            <abbr title="Responsabilité Sociale et Environnementale">RSE</abbr>...
+                        </p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="feature">
+                        <h3>
+                            My C-Tool s'adapte à votre structure
+                        </h3>
+
+                        <p>
+                            Grande entreprise, PME, fédération professionnelle, collectivité, établissement public...
+                        </p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="feature">
+                        <h3>
+                            My C-Tool s'adapte à votre périmètre de suivi
+                        </h3>
+
+                        <p>
+                            Entité, projet, événement, produit, service, procédé...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </section>
+           <div class="container features">
             <div class="row">
                 <div class="span4">
                     <div class="feature">
@@ -260,54 +297,6 @@ if (isset($_POST['contact-email'])) {
         </div>
     </section>
 
-    <!--
-    <section class="separator">
-        <div class="container">
-            <div class="row">
-                <div class="span8">
-                    <div id="myCarousel" class="carousel slide"> -->
-                        <!-- Carousel items -->
-                        <!--<div class="carousel-inner">
-                            <div class="active item">
-                                <img src="captures/1.png">
-                                <div class="carousel-caption">
-                                    <h4>Third Thumbnail label</h4>
-                                    <p>Super feature</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="captures/2.png">
-                                <div class="carousel-caption">
-                                    <h4>Third Thumbnail label</h4>
-                                    <p>Super feature</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="captures/3.png">
-                                <div class="carousel-caption">
-                                    <h4>Third Thumbnail label</h4>
-                                    <p>Super feature</p>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Carousel nav --> <!--
-                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="trust-explainer">
-                        <h2>CollabOApp is an awesome solution to team environments.</h2>
-
-                        <p>All setups come with unlimited version control, storage in the cloud, live chat, real-time
-                            updates, marked-up feedback forms and more. Try our integrated test labs for some fun and
-                            measurable team collaboration experiments.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
 
     <section class="separator">
         <div class="container">
