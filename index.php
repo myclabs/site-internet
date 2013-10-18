@@ -144,7 +144,7 @@ if (isset($_POST['contact-email'])) {
                         </form>
                     </div>
                     <div class="span4">
-                        <a href="#contact" class="more-infos btn btn-block btn-info">Plus d'informations</a>
+                        <a href="#contact" class="more-infos btn btn-block btn-info">Nous contacter</a>
                     </div>
                 </div>
             </div>
