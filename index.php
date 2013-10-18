@@ -127,10 +127,10 @@ if (isset($_POST['contact-email'])) {
                         </div>
                     </div>
                 <?php endif; ?>
-                <div>
+                <h3>
                     <strong>Démonstration en ligne.</strong>
                     Inscrivez-vous pour obtenir accès à une version de démonstration de My C-Tool
-                </div>
+                </h3>
                 <div class="row">
                     <div class="span8">
                         <form action="#" method="post">
@@ -340,7 +340,6 @@ if (isset($_POST['contact-email'])) {
         <div class="container">
 
             <h2>
-                <small>Plus d'informations</small>
                 Contactez-nous
             </h2>
             <p style="a:hover {text-decoration: underline;} ">Vous pouvez nous contacter directement à l'adresse&nbsp;:
