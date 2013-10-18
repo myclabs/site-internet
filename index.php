@@ -83,36 +83,37 @@ if (isset($_POST['contact-email'])) {
             ?>
 
             <div class="container">
-                <div class="row">
-                    <div class="span8">
-                        <header>
-                            <hgroup>
-                                <h1>
-                                    My C-Tool
-                                    <br/>
-                                    <small>Solution Web de collecte et de reporting extra-financier</small>
-                                </h1>
-                                
-                                <h2>
-                                My C-Tool::collecte<br/>
-                                <strong>Gagnez en efficacité sur votre collecte d'informations !</strong><br/>
-                                <a href="collecte.php">En savoir plus sur My C-Tool::collecte &raquo;</a>
-                                </h2>
-                                
-                                <h2>
-                                My C-Tool::reporting<br/>
-                                <strong>Automatisez votre processus d'analyse et de reporting !</strong><br/>
-                                <a href="reporting.php">En savoir plus sur My C-Tool::reporting &raquo;</a>
-                                </h2>
+                <header>
+                    <hgroup>
+                        <h1>
+                            My C-Tool
+                            <br/>
+                            <small>Solution Web de collecte et de reporting extra-financier</small>
+                        </h1>
+                    </hgroup>
+                </header>
 
-                            </hgroup>
-
-                        </header>
+                <div class="row-fluid products">
+                    <div class="span6 product">
+                        <h2>My C-Tool::collecte</h2>
+                        <p class="tagline">
+                            Gagnez en efficacité sur votre collecte d'informations !
+                        </p>
+                        <p>
+                            <a href="collecte.php">En savoir plus &raquo;</a>
+                        </p>
                     </div>
-                    <div class="span4">
-                        <img src="imgCustom/dessin-myc-tool.png" alt="Hero Image">
+                    <div class="span6 product">
+                        <h2>My C-Tool::reporting</h2>
+                        <p class="tagline">
+                            Automatisez votre processus d'analyse et de reporting !
+                        </p>
+                        <p>
+                            <a href="reporting.php">En savoir plus &raquo;</a>
+                        </p>
                     </div>
                 </div>
+
                 <?php if ($demo) : ?>
                     <div class="row">
                         <div class="span12">
@@ -126,11 +127,9 @@ if (isset($_POST['contact-email'])) {
                         </div>
                     </div>
                 <?php endif; ?>
-                <div class="row">
-                    <div class="span8">
-                        <h2>Démonstration en ligne</h2>
-                        <p>Inscrivez-vous pour obtenir accès à une version de démonstration de My C-Tool</p>
-                    </div>
+                <div>
+                    <strong>Démonstration en ligne.</strong>
+                    Inscrivez-vous pour obtenir accès à une version de démonstration de My C-Tool
                 </div>
                 <div class="row">
                     <div class="span8">
@@ -149,7 +148,12 @@ if (isset($_POST['contact-email'])) {
                 </div>
             </div>
         </div>
-           <div class="container features">
+
+        <div class="container features">
+            <img src="imgCustom/dessin-myc-tool.png" alt="Hero Image">
+        </div>
+
+        <div class="container features">
             <div class="row">
                 <div class="span4">
                     <div class="feature">

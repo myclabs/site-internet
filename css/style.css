@@ -31,6 +31,32 @@ section h2 {
     padding-top:10px;
 }
 
+/* Products */
+.hero-unit .products {
+    margin: 20px 0;
+}
+.hero-unit .product {
+    font-size: 24px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 15px;
+    background: white;
+}
+.hero-unit .product * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.hero-unit .product .tagline {
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 40px;
+}
+.hero-unit .product h2 {
+    color: #454545;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
 footer {
     margin-top: 40px;
 }
