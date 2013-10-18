@@ -75,52 +75,64 @@ if (isset($_POST['contact-email'])) {
 <body class="tour-page">
     <div class="hero-unit">
 
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="visible" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
+        <?php
+        $page = 'reporting';
+        include 'menu.php';
+        ?>
 
-                    <div class="nav-collapse collapse">
-                        <ul class="nav pull-right">
-                            <li class="active"><a href="index.php"><img src="imgCustom/logo.png" alt="Logo My C-Sense" width="150px" height="50px"/></a></li>
-                        </ul>
-                        <ul class="nav pull-right">
-                            <li><a href="index.php">My C-sense</a></li>
-                            <li><a href="collecte.php">Collecte</a></li>
-                            <li class="active"><a href="reporting.php">Reporting</a></li>
-                            <li><a href="#contact" >Contact</a></li>
-                        </ul>
+        <div class="row">
+            <header>
+                <h1>
+                My C-Tool::reporting<br/>
+                <small>Automatisez votre processus d'analyse et de reporting !</small>
+                </h1>
+            </header>
+        </div>
+
+    </div>
+
+    <section class="separator">
+        <div class="container features separator">
+            <div class="row">
+                <div class="span4">
+                    <div class="feature">
+                        <h3>
+                            My C-Tool s'adapte à votre besoin
+                        </h3>
+
+                        <p>
+                            Reporting développement durable,
+                            <abbr title="Bilan Gaz à Effet de Serre (réglementaire)">BGES</abbr>,
+                            bilan carbone, énergie, eau, déchets,
+                            <abbr title="Qualité, Hygiène, Sécurité, Environnement">QHSE</abbr>,
+                            <abbr title="Responsabilité Sociale et Environnementale">RSE</abbr>...
+                        </p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="feature">
+                        <h3>
+                            My C-Tool s'adapte à votre structure
+                        </h3>
+
+                        <p>
+                            Grande entreprise, PME, fédération professionnelle, collectivité, établissement public...
+                        </p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="feature">
+                        <h3>
+                            My C-Tool s'adapte à votre périmètre de suivi
+                        </h3>
+
+                        <p>
+                            Entité, projet, événement, produit, service, procédé...
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="row">
-                <header>
-                    <h1>
-                    My C-Tool::reporting<br/>
-                    <small>Automatisez votre processus d'analyse et de reporting !</small>
-                    </h1>
-                </header>
-            </div>
-
-    </div>
-    <section class="separator">
-
-        <article>
-            <div class="container">
-                <div class="row">
-                    <div class="span12">
-                        <h2>A faire !</h2>
-                    </div>
-                </div>
-            </div>
-        </article>
-
     </section>
 
     <section class="separator">

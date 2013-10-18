@@ -77,23 +77,10 @@ if (isset($_POST['contact-email'])) {
     <section class="introduction" role="main">
         <div class="hero-unit">
 
-            <div class="navbar">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <a class="btn btn-navbar" data-toggle="visible" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-
-                        <div class="nav-collapse collapse">
-                            <ul class="nav pull-right">
-                                <li class="active"><a href="index.php"><img src="imgCustom/logo.png" alt="Logo My C-Sense" width="150px" height="50px"/></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+            $page = 'home';
+            include 'menu.php';
+            ?>
 
             <div class="container">
                 <div class="row">
@@ -146,7 +133,7 @@ if (isset($_POST['contact-email'])) {
                     </div>
                 </div>
                 <div class="row">
-                    <div class="span6">
+                    <div class="span8">
                         <form action="#" method="post">
                             <div class="input-append" style="display: auto">
                                 <input type="text" name="demo-email" placeholder="Email" style="width:60%;">
@@ -162,50 +149,6 @@ if (isset($_POST['contact-email'])) {
                 </div>
             </div>
         </div>
-<section class="separator">
-        <div class="container features separator">
-
-            <div class="row">
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            My C-Tool s'adapte à votre besoin
-                        </h3>
-
-                        <p>
-                            Reporting développement durable,
-                            <abbr title="Bilan Gaz à Effet de Serre (réglementaire)">BGES</abbr>,
-                            bilan carbone, énergie, eau, déchets,
-                            <abbr title="Qualité, Hygiène, Sécurité, Environnement">QHSE</abbr>,
-                            <abbr title="Responsabilité Sociale et Environnementale">RSE</abbr>...
-                        </p>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            My C-Tool s'adapte à votre structure
-                        </h3>
-
-                        <p>
-                            Grande entreprise, PME, fédération professionnelle, collectivité, établissement public...
-                        </p>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            My C-Tool s'adapte à votre périmètre de suivi
-                        </h3>
-
-                        <p>
-                            Entité, projet, événement, produit, service, procédé...
-                        </p>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </section>
            <div class="container features">
             <div class="row">
                 <div class="span4">
