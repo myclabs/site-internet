@@ -77,55 +77,43 @@ if (isset($_POST['contact-email'])) {
     <section class="introduction" role="main">
         <div class="hero-unit">
 
-            <div class="navbar">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <a class="btn btn-navbar" data-toggle="visible" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-
-                        <div class="nav-collapse collapse">
-                            <ul class="nav pull-right">
-                                <li class="active"><a href="index.php"><img src="imgCustom/logo.png" alt="Logo My C-Sense" width="150px" height="50px"/></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+            $page = 'home';
+            include 'menu.php';
+            ?>
 
             <div class="container">
-                <div class="row">
-                    <div class="span8">
-                        <header>
-                            <hgroup>
-                                <h1>
-                                    My C-Tool
-                                    <br/>
-                                    <small>Solution Web de collecte et de reporting extra-financier</small>
-                                </h1>
-                                
-                                <h2>
-                                My C-Tool::collecte<br/>
-                                <strong>Gagnez en efficacité sur votre collecte d'informations !</strong><br/>
-                                <a href="collecte.php">En savoir plus sur My C-Tool::collecte &raquo;</a>
-                                </h2>
-                                
-                                <h2>
-                                My C-Tool::reporting<br/>
-                                <strong>Automatisez votre processus d'analyse et de reporting !</strong><br/>
-                                <a href="reporting.php">En savoir plus sur My C-Tool::reporting &raquo;</a>
-                                </h2>
+                <header>
+                    <hgroup>
+                        <h1>
+                            My C-Sense
+                            <br/>
+                            <small>Solutions web de collecte et de reporting extra-financier</small>
+                        </h1>
+                    </hgroup>
+                </header>
 
-                            </hgroup>
-
-                        </header>
+                <div class="row-fluid products">
+                    <div class="span6 product">
+                        <h2>My C-Tool::collecte</h2>
+                        <p class="tagline">
+                            Gagnez en efficacité sur votre collecte d'informations !
+                        </p>
+                        <p>
+                            <a href="collecte.php">En savoir plus &raquo;</a>
+                        </p>
                     </div>
-                    <div class="span4">
-                        <img src="imgCustom/dessin-myc-tool.png" alt="Hero Image">
+                    <div class="span6 product">
+                        <h2>My C-Tool::reporting</h2>
+                        <p class="tagline">
+                            Automatisez votre processus d'analyse et de reporting !
+                        </p>
+                        <p>
+                            <a href="reporting.php">En savoir plus &raquo;</a>
+                        </p>
                     </div>
                 </div>
+
                 <?php if ($demo) : ?>
                     <div class="row">
                         <div class="span12">
@@ -139,14 +127,12 @@ if (isset($_POST['contact-email'])) {
                         </div>
                     </div>
                 <?php endif; ?>
+                <h3>
+                    <strong>Démonstration en ligne.</strong>
+                    Inscrivez-vous pour obtenir accès à une version de démonstration de My C-Tool
+                </h3>
                 <div class="row">
                     <div class="span8">
-                        <h2>Démonstration en ligne</h2>
-                        <p>Inscrivez-vous pour obtenir accès à une version de démonstration de My C-Tool</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="span6">
                         <form action="#" method="post">
                             <div class="input-append" style="display: auto">
                                 <input type="text" name="demo-email" placeholder="Email" style="width:60%;">
@@ -157,141 +143,113 @@ if (isset($_POST['contact-email'])) {
                         </form>
                     </div>
                     <div class="span4">
-                        <a href="#contact" class="more-infos btn btn-block btn-info">Plus d'informations</a>
+                        <a href="#contact" class="link-contact more-infos btn btn-block btn-info">Nous contacter</a>
                     </div>
                 </div>
             </div>
         </div>
-<section class="separator">
-        <div class="container features separator">
+
+        <div class="container features">
+
+            <h2>Pourquoi choisir les solutions My C-Tool ?</h2>
 
             <div class="row">
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            My C-Tool s'adapte à votre besoin
-                        </h3>
+                <div class="span8">
 
-                        <p>
-                            Reporting développement durable,
-                            <abbr title="Bilan Gaz à Effet de Serre (réglementaire)">BGES</abbr>,
-                            bilan carbone, énergie, eau, déchets,
-                            <abbr title="Qualité, Hygiène, Sécurité, Environnement">QHSE</abbr>,
-                            <abbr title="Responsabilité Sociale et Environnementale">RSE</abbr>...
-                        </p>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="feature">
+                                <h3>
+                                    <i class="icon-user icon-large"></i>
+                                    Simple
+                                </h3>
+
+                                <p>
+                                    Accès par navigateur sans installation préalable, interfaces de saisie et d'analyse intuitives,
+                                    aides en ligne personnalisées.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="feature">
+                                <h3>
+                                    <i class="icon-bolt icon-large"></i>
+                                    Puissant
+                                </h3>
+
+                                <p>
+                                    Interface multilingue, collecte décentralisée, suivi de la collecte,
+                                    imports/exports, analyses et rapports ad hoc en quelques clics, disponibles à tous les niveaux souhaités
+                                    de votre organisation, mise en place et suivi d'un plan d'actions.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="feature">
+                                <h3>
+                                    <i class="icon-random icon-large"></i>
+                                    Évolutif
+                                </h3>
+
+                                <p>
+                                    Indicateurs, structure organisationnelle, axes d’analyses, formulaires de collecte, référentiels : dans My C-Tool
+                                    rien n’est figé. Démarrez au plus simple et adaptez la solution aux évolutions de vos besoins et
+                                    de la réglementation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="feature">
+                                <h3>
+                                    <i class="icon-cogs icon-large"></i>
+                                    Ouvert
+                                </h3>
+
+                                <p>
+                                    La configuration de notre solution est si simple qu’elle peut être
+                                    confiée en totalité à nos partenaires (bureaux d’études) et/ou à nos clients. Avec My C-Tool, vous gardez
+                                    la main.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="feature">
+                                <h3>
+                                    <i class="icon-eye-open icon-large"></i>
+                                    Transparent
+                                </h3>
+
+                                <p>
+                                    Détail des calculs effectués, valeurs et sources des paramètres utilisés,
+                                    documents justificatifs, traces des actions utilisateur et des valeurs saisies : avec
+                                    My C-Tool, votre reporting extra-financier devient 100% auditable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="feature">
+                                <h3>
+                                    <i class="icon-shopping-cart icon-large"></i>
+                                    Économique
+                                </h3>
+
+                                <p>
+                                    Coûts de déploiement et de configuration optimisés et implication dans le
+                                    logiciel libre nous permettent de vous proposer nos solutions au meilleur prix.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            My C-Tool s'adapte à votre structure
-                        </h3>
-
-                        <p>
-                            Grande entreprise, PME, fédération professionnelle, collectivité, établissement public...
-                        </p>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            My C-Tool s'adapte à votre périmètre de suivi
-                        </h3>
-
-                        <p>
-                            Entité, projet, événement, produit, service, procédé...
-                        </p>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </section>
-           <div class="container features">
-            <div class="row">
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            <i class="icon-user icon-large"></i>
-                            Simple
-                        </h3>
-
-                        <p>
-                            Accès par navigateur sans installation préalable, interfaces de saisie et d'analyse intuitives,
-                            aides en ligne personnalisées.
-                        </p>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            <i class="icon-bolt icon-large"></i>
-                            Puissant
-                        </h3>
-
-                        <p>
-                            Interface multilingue, collecte décentralisée, suivi de la collecte,
-                            imports/exports, analyses et rapports ad hoc en quelques clics, disponibles à tous les niveaux souhaités
-                            de votre organisation, mise en place et suivi d'un plan d'actions.
-                        </p>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            <i class="icon-random icon-large"></i>
-                            Évolutif
-                        </h3>
-
-                        <p>
-                            Indicateurs, structure organisationnelle, axes d’analyses, formulaires de collecte, référentiels : dans My C-Tool
-                            rien n’est figé. Démarrez au plus simple et adaptez la solution aux évolutions de vos besoins et
-                            de la réglementation.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            <i class="icon-cogs icon-large"></i>
-                            Ouvert
-                        </h3>
-
-                        <p>
-                            La configuration de notre solution est si simple qu’elle peut être
-                            confiée en totalité à nos partenaires (bureaux d’études) et/ou à nos clients. Avec My C-Tool, vous gardez
-                            la main.
-                        </p>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            <i class="icon-eye-open icon-large"></i>
-                            Transparent
-                        </h3>
-
-                        <p>
-                            Détail des calculs effectués, valeurs et sources des paramètres utilisés,
-                            documents justificatifs, traces des actions utilisateur et des valeurs saisies : avec
-                            My C-Tool, votre reporting extra-financier devient 100% auditable.
-                        </p>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            <i class="icon-shopping-cart icon-large"></i>
-                            Économique
-                        </h3>
-
-                        <p>
-                            Coûts de déploiement et de configuration optimisés et implication dans le
-                            logiciel libre nous permettent de vous proposer nos solutions au meilleur prix.
-                        </p>
-                    </div>
+                    <img src="imgCustom/dessin-myc-tool.png" alt="Hero Image">
                 </div>
             </div>
         </div>
@@ -382,7 +340,6 @@ if (isset($_POST['contact-email'])) {
         <div class="container">
 
             <h2>
-                <small>Plus d'informations</small>
                 Contactez-nous
             </h2>
             <p style="a:hover {text-decoration: underline;} ">Vous pouvez nous contacter directement à l'adresse&nbsp;:
@@ -449,7 +406,7 @@ if (isset($_POST['contact-email'])) {
     <script src="js/app.js"></script>
 
     <script>
-        $(".more-infos").click(function(e) {
+        $(".link-contact").click(function(e) {
             $('html, body').animate({
                 scrollTop: $("form#contact").offset().top
             }, 1000, function() {
