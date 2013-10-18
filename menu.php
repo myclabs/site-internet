@@ -15,7 +15,7 @@
                     <li class="<?=$page == 'home' ? 'active' : ''?>"><a href="index.php">My C-Sense</a></li>
                     <li class="<?=$page == 'collecte' ? 'active' : ''?>"><a href="collecte.php">Collecte</a></li>
                     <li class="<?=$page == 'reporting' ? 'active' : ''?>"><a href="reporting.php">Reporting</a></li>
-                    <li><a href="#contact" >Contact</a></li>
+                    <li><a class="link-contact" href="#contact" >Contact</a></li>
                 </ul>
             </div>
         </div>

@@ -143,7 +143,7 @@ if (isset($_POST['contact-email'])) {
                         </form>
                     </div>
                     <div class="span4">
-                        <a href="#contact" class="more-infos btn btn-block btn-info">Nous contacter</a>
+                        <a href="#contact" class="link-contact more-infos btn btn-block btn-info">Nous contacter</a>
                     </div>
                 </div>
             </div>
@@ -406,7 +406,7 @@ if (isset($_POST['contact-email'])) {
     <script src="js/app.js"></script>
 
     <script>
-        $(".more-infos").click(function(e) {
+        $(".link-contact").click(function(e) {
             $('html, body').animate({
                 scrollTop: $("form#contact").offset().top
             }, 1000, function() {
