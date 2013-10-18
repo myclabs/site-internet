@@ -86,9 +86,9 @@ if (isset($_POST['contact-email'])) {
                 <header>
                     <hgroup>
                         <h1>
-                            My C-Tool
+                            My C-Sense
                             <br/>
-                            <small>Solution Web de collecte et de reporting extra-financier</small>
+                            <small>Solutions web de collecte et de reporting extra-financier</small>
                         </h1>
                     </hgroup>
                 </header>
@@ -150,95 +150,106 @@ if (isset($_POST['contact-email'])) {
         </div>
 
         <div class="container features">
-            <img src="imgCustom/dessin-myc-tool.png" alt="Hero Image">
-        </div>
 
-        <div class="container features">
-            <div class="row">
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            <i class="icon-user icon-large"></i>
-                            Simple
-                        </h3>
-
-                        <p>
-                            Accès par navigateur sans installation préalable, interfaces de saisie et d'analyse intuitives,
-                            aides en ligne personnalisées.
-                        </p>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            <i class="icon-bolt icon-large"></i>
-                            Puissant
-                        </h3>
-
-                        <p>
-                            Interface multilingue, collecte décentralisée, suivi de la collecte,
-                            imports/exports, analyses et rapports ad hoc en quelques clics, disponibles à tous les niveaux souhaités
-                            de votre organisation, mise en place et suivi d'un plan d'actions.
-                        </p>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            <i class="icon-random icon-large"></i>
-                            Évolutif
-                        </h3>
-
-                        <p>
-                            Indicateurs, structure organisationnelle, axes d’analyses, formulaires de collecte, référentiels : dans My C-Tool
-                            rien n’est figé. Démarrez au plus simple et adaptez la solution aux évolutions de vos besoins et
-                            de la réglementation.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <h2>Pourquoi choisir les solutions My C-Tool ?</h2>
 
             <div class="row">
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            <i class="icon-cogs icon-large"></i>
-                            Ouvert
-                        </h3>
+                <div class="span8">
 
-                        <p>
-                            La configuration de notre solution est si simple qu’elle peut être
-                            confiée en totalité à nos partenaires (bureaux d’études) et/ou à nos clients. Avec My C-Tool, vous gardez
-                            la main.
-                        </p>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="feature">
+                                <h3>
+                                    <i class="icon-user icon-large"></i>
+                                    Simple
+                                </h3>
+
+                                <p>
+                                    Accès par navigateur sans installation préalable, interfaces de saisie et d'analyse intuitives,
+                                    aides en ligne personnalisées.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="feature">
+                                <h3>
+                                    <i class="icon-bolt icon-large"></i>
+                                    Puissant
+                                </h3>
+
+                                <p>
+                                    Interface multilingue, collecte décentralisée, suivi de la collecte,
+                                    imports/exports, analyses et rapports ad hoc en quelques clics, disponibles à tous les niveaux souhaités
+                                    de votre organisation, mise en place et suivi d'un plan d'actions.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="feature">
+                                <h3>
+                                    <i class="icon-random icon-large"></i>
+                                    Évolutif
+                                </h3>
+
+                                <p>
+                                    Indicateurs, structure organisationnelle, axes d’analyses, formulaires de collecte, référentiels : dans My C-Tool
+                                    rien n’est figé. Démarrez au plus simple et adaptez la solution aux évolutions de vos besoins et
+                                    de la réglementation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="feature">
+                                <h3>
+                                    <i class="icon-cogs icon-large"></i>
+                                    Ouvert
+                                </h3>
+
+                                <p>
+                                    La configuration de notre solution est si simple qu’elle peut être
+                                    confiée en totalité à nos partenaires (bureaux d’études) et/ou à nos clients. Avec My C-Tool, vous gardez
+                                    la main.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="feature">
+                                <h3>
+                                    <i class="icon-eye-open icon-large"></i>
+                                    Transparent
+                                </h3>
+
+                                <p>
+                                    Détail des calculs effectués, valeurs et sources des paramètres utilisés,
+                                    documents justificatifs, traces des actions utilisateur et des valeurs saisies : avec
+                                    My C-Tool, votre reporting extra-financier devient 100% auditable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="feature">
+                                <h3>
+                                    <i class="icon-shopping-cart icon-large"></i>
+                                    Économique
+                                </h3>
+
+                                <p>
+                                    Coûts de déploiement et de configuration optimisés et implication dans le
+                                    logiciel libre nous permettent de vous proposer nos solutions au meilleur prix.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            <i class="icon-eye-open icon-large"></i>
-                            Transparent
-                        </h3>
-
-                        <p>
-                            Détail des calculs effectués, valeurs et sources des paramètres utilisés,
-                            documents justificatifs, traces des actions utilisateur et des valeurs saisies : avec
-                            My C-Tool, votre reporting extra-financier devient 100% auditable.
-                        </p>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="feature">
-                        <h3>
-                            <i class="icon-shopping-cart icon-large"></i>
-                            Économique
-                        </h3>
-
-                        <p>
-                            Coûts de déploiement et de configuration optimisés et implication dans le
-                            logiciel libre nous permettent de vous proposer nos solutions au meilleur prix.
-                        </p>
-                    </div>
+                    <img src="imgCustom/dessin-myc-tool.png" alt="Hero Image">
                 </div>
             </div>
         </div>

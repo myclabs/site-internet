@@ -81,13 +81,13 @@ if (isset($_POST['contact-email'])) {
         ?>
 
         <div class="row">
-                <header>
-                    <h1>
-                    My C-Tool::collecte<br/>
-                    <small>Gagnez en efficacité sur votre collecte d'informations !</small>
-                    </h1>
-                </header>
-            </div>
+            <header>
+                <h1>
+                My C-Tool::collecte<br/>
+                <small>Gagnez en efficacité sur votre collecte d'informations !</small>
+                </h1>
+            </header>
+        </div>
 
     </div>
     <section class="separator">

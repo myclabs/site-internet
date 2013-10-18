@@ -12,7 +12,7 @@
                     <li class="active"><a href="index.php"><img src="imgCustom/logo.png" alt="Logo My C-Sense" width="150px" height="50px"/></a></li>
                 </ul>
                 <ul class="nav pull-right">
-                    <li class="<?=$page == 'home' ? 'active' : ''?>"><a href="index.php">My C-sense</a></li>
+                    <li class="<?=$page == 'home' ? 'active' : ''?>"><a href="index.php">My C-Sense</a></li>
                     <li class="<?=$page == 'collecte' ? 'active' : ''?>"><a href="collecte.php">Collecte</a></li>
                     <li class="<?=$page == 'reporting' ? 'active' : ''?>"><a href="reporting.php">Reporting</a></li>
                     <li><a href="#contact" >Contact</a></li>
