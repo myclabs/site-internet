@@ -93,7 +93,9 @@ if (isset($_POST['contact-email'])) {
                     </hgroup>
                 </header>
 
-                <div class="row-fluid products">
+				<div class="row">
+                <div class="products span6">
+				<h2 style="margin-left: 30px;">Découvrez nos deux solutions</h2>
                     <div class="span6 product">
                         <h2>My C-Tool::collecte</h2>
                         <p class="tagline">
@@ -113,6 +115,10 @@ if (isset($_POST['contact-email'])) {
                         </p>
                     </div>
                 </div>
+				<div class="span6" style="padding-left: 30px;">
+				<img src="imgCustom/dessin-myc-tool.png" alt="Hero Image">
+				</div>
+				</div>
 
                 <?php if ($demo) : ?>
                     <div class="row">
@@ -154,10 +160,10 @@ if (isset($_POST['contact-email'])) {
             <h2>Pourquoi choisir les solutions My C-Tool ?</h2>
 
             <div class="row">
-                <div class="span8">
+                <div class="span12">
 
                     <div class="row-fluid">
-                        <div class="span6">
+                        <div class="span4">
                             <div class="feature">
                                 <h3>
                                     <i class="icon-user icon-large"></i>
@@ -170,7 +176,7 @@ if (isset($_POST['contact-email'])) {
                                 </p>
                             </div>
                         </div>
-                        <div class="span6">
+                        <div class="span4">
                             <div class="feature">
                                 <h3>
                                     <i class="icon-bolt icon-large"></i>
@@ -184,10 +190,7 @@ if (isset($_POST['contact-email'])) {
                                 </p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row-fluid">
-                        <div class="span6">
+                        <div class="span4">
                             <div class="feature">
                                 <h3>
                                     <i class="icon-random icon-large"></i>
@@ -201,7 +204,10 @@ if (isset($_POST['contact-email'])) {
                                 </p>
                             </div>
                         </div>
-                        <div class="span6">
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span4">
                             <div class="feature">
                                 <h3>
                                     <i class="icon-cogs icon-large"></i>
@@ -215,10 +221,7 @@ if (isset($_POST['contact-email'])) {
                                 </p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row-fluid">
-                        <div class="span6">
+                        <div class="span4">
                             <div class="feature">
                                 <h3>
                                     <i class="icon-eye-open icon-large"></i>
@@ -232,7 +235,7 @@ if (isset($_POST['contact-email'])) {
                                 </p>
                             </div>
                         </div>
-                        <div class="span6">
+                        <div class="span4">
                             <div class="feature">
                                 <h3>
                                     <i class="icon-shopping-cart icon-large"></i>
@@ -247,9 +250,6 @@ if (isset($_POST['contact-email'])) {
                         </div>
                     </div>
 
-                </div>
-                <div class="span4">
-                    <img src="imgCustom/dessin-myc-tool.png" alt="Hero Image">
                 </div>
             </div>
         </div>

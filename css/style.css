@@ -49,6 +49,7 @@ section h2 {
     border-radius: 8px;
     padding: 15px;
     background: #fdfdfd;
+	margin-bottom: 30px;
 }
 .hero-unit .product * {
     margin-top: 0;
