@@ -97,12 +97,12 @@ if (isset($_POST['contact-email'])) {
                 <div class="row">
                     <div class="span8">
                         <h2><!-- <small>My C-Tool::Collecte</small> -->Solution Web de collecte d'informations décentralisée</h2>
-                        <p>Vous définissez les informations dont vous avez besoin, vos contributeurs saisissent de simples formulaires et vous récupérez toutes vos données au format Excel !</p>
-                        <h3>My C-Tool::collecte vous permet de :</h3>
+                        <p>Vous définissez les informations à analyser, vos contributeurs saisissent les données, vous les récupérez au format Excel !</p>
+                        <h3>Avec My C-Tool::collecte :</h3>
                         <ul>
-                            <li>Simplifier votre processus de collecte</li>
-                            <li>Conserver vos données sources sur le cloud</li>
-                            <li>Faire évoluer votre collecte à tout moment</li>
+							<li>Simplifiez votre processus de collecte</li>
+							<li>Conservez vos données sources sur le cloud</li>
+							<li>Faites évoluer votre collecte à tout moment</li>
                         </ul>
                     </div>
                     <div class="span4">
@@ -120,9 +120,9 @@ if (isset($_POST['contact-email'])) {
                     </div>
                     <div class="span6">
                         <h2><!-- <small>My C-Tool::Collecte</small> -->Modèle d'organisation libre</h2>
-                        <p>Définissez l’organisation des données, en reprenant le modèle organisationnel et la terminologie réels.</p>
-                        <p>Rattachez vos formulaires à n'importe quel point de votre modèle organisationnel.</p>
-                        <p>Choisissez quels sont les contributeurs qui doivent saisir des informations à n'importe quel endroit de votre modèle organisationnel.</p>
+                        <p>Structurez votre collecte en modélisant la structure organisationnelle de l'activité à analyser.</p>
+                        <p>Définissez librement les informations à collecter à tout niveau de l'organisation.</p>
+                        <p>Choisissez les contributeurs qui saisiront les données.</p>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@ if (isset($_POST['contact-email'])) {
                 <div class="row">
                     <div class="span4">
                         <h2><!-- <small>My C-Tool::Collecte</small> -->Formulaires à la carte</h2>
-                        <p>Créez les formulaires de saisie, au plus près des notions familières aux contributeurs concernés.</p>
+                        <p>Utilisez des formulaires standards ou créez des formulaires adaptés aux besoins de votre collecte.</p>
                         <h3>Vous pouvez :</h3>
                         <ul>
                             <li>Définir les questions posés</li>

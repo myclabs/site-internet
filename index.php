@@ -97,7 +97,7 @@ if (isset($_POST['contact-email'])) {
                     <div class="span6 product">
                         <h2>My C-Tool::collecte</h2>
                         <p class="tagline">
-                            Gagnez en efficacité sur votre collecte d'informations !
+                            Optimisez votre collecte d'information et assurez la pérénité de vos données.
                         </p>
                         <p>
                             <a href="collecte.php">En savoir plus &raquo;</a>
@@ -106,7 +106,7 @@ if (isset($_POST['contact-email'])) {
                     <div class="span6 product">
                         <h2>My C-Tool::reporting</h2>
                         <p class="tagline">
-                            Automatisez votre processus d'analyse et de reporting !
+                            Automatisez votre processus d'analyse et de reporting.
                         </p>
                         <p>
                             <a href="reporting.php">En savoir plus &raquo;</a>
