@@ -97,19 +97,13 @@ if (isset($_POST['contact-email'])) {
                 <div class="products span6">
 				<h2 style="margin-left: 30px;">Découvrez nos deux solutions</h2>
                     <div class="span6 product">
-                        <h2>My C-Tool::collecte</h2>
-                        <p class="tagline">
-                            Optimisez votre collecte d'information et assurez la pérénité de vos données.
-                        </p>
+                        <h2>My C-Tool::collecte <strong>optimise votre collecte d'information et assure la pérénité de vos données.</strong></h2>
                         <p>
                             <a href="collecte.php">En savoir plus &raquo;</a>
                         </p>
                     </div>
                     <div class="span6 product">
-                        <h2>My C-Tool::reporting</h2>
-                        <p class="tagline">
-                            Automatisez votre processus d'analyse et de reporting.
-                        </p>
+                        <h2>My C-Tool::reporting <strong>automatise votre processus d'analyse et de reporting.</strong></h2>
                         <p>
                             <a href="reporting.php">En savoir plus &raquo;</a>
                         </p>

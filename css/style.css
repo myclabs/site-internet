@@ -55,10 +55,8 @@ section h2 {
     margin-top: 0;
     margin-bottom: 0;
 }
-.hero-unit .product .tagline {
-    font-weight: bold;
-    font-size: 27px;
-    line-height: 40px;
+.hero-unit h2 {
+    color: #636971;
 }
 
 footer {
