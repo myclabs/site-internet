@@ -36,7 +36,7 @@ if (isset($_POST['contact-email'])) {
     $email['user']['body'] = "The following informations has been sent to My C-Sense.\n\n"
         ."Email : ".$userEmail."\n\n"
         ."---------- Message begin ----------\n\n".$body."\n\n"."---------- Message End ----------\n\n"
-        . "We hope that you initiated this message and we will get back to you as soon as possible.";
+        . "We will get back to you as soon as possible.";
     $email['user']['headers'] = $headers.'From: My C-Sense <contact@myc-sense.com>'."\n".'Reply-To: My C-Sense <contact@myc-sense.com>';
     // Envoi
     mail($email['mcs']['address'], $email['mcs']['subject'], $email['mcs']['body'], $email['mcs']['headers']);
@@ -89,8 +89,8 @@ if (isset($_POST['contact-email'])) {
                 <li class=""><a href="collecte.html">Collecte</a></li>
                 <li class=""><a href="reporting.html">Reporting</a></li> -->
                 <li class=""><a class="link-contact" href="#contact">Contact</a></li>
-                <li class=""><button class="btn btn-primary btn-normal link-demo" href="#demo">On-line demonstration</button></li>
-                <li class=""><a href="fr" class="langLink">fr</a></li>
+                <li class=""><button class="btn btn-primary btn-normal link-demo" href="#demo">On-line demo</button></li>
+                <li class=""><a href="fr" class="langLink"> Français</a></li>
               </ul>
             </div>
           </div>
@@ -197,7 +197,7 @@ if (isset($_POST['contact-email'])) {
                 <p>Build the organization and the authorizations structure</p>
                 <p>Follow-up progress and keep the contributors motivated</p>
                 <p>Share comments with the contributors</p>
-                <p>Download the data into an Excel sheet</p>
+                <p>Download the data into an Excel spreadsheet</p>
                 <p>And find still much more: documents attachments, auditability, English/French interface, easiness to repeat or adapt the data collection...</p>
 
                 <!-- <a href="collecte.html" class="btn">En savoir plus sur la collecte &raquo;</a> -->
@@ -213,10 +213,10 @@ if (isset($_POST['contact-email'])) {
                     Transform the data collection into a powerful reporting and management tool
                 </h2>
 
-                <p>Activate this module at the moment you wish to</p>
+                <p>Activate this module anytime you want</p>
                 <p>Perform real-time analysis of data at any organizational level</p>
                 <p>Share the analyses with the users depending on their authorizations</p>
-                <p>Follow all types of indicators and any number of them</p>
+                <p>Follow all types of indicators and as much as you need</p>
                 <p>Choose to simply aggregate the collected data, or add a processing layer as elaborate as you need, based on official and/or internal reference data</p>
                 <p>And find still much more: auditability, English/French interface, data downloads...</p>
 

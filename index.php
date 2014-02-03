@@ -36,7 +36,7 @@ if (isset($_POST['contact-email'])) {
     $email['user']['body'] = "Les informations suivantes ont été transmises sur la page de contact du site www.myc-sense.com.\n\n"
         ."Adresse e-mail : ".$userEmail."\n\n"
         ."---------- Début du message ----------\n\n".$body."\n\n"."---------- Fin du message ----------\n\n"
-        . "Nous espérons que vous êtes bien à l'origine de cette demande et reprendrons contact avec vous dans les meilleurs délais.";
+        . "Nous reprendrons contact avec vous dans les meilleurs délais.";
     $email['user']['headers'] = $headers.'From: My C-Sense <contact@myc-sense.com>'."\n".'Reply-To: My C-Sense <contact@myc-sense.com>';
     // Envoi
     mail($email['mcs']['address'], $email['mcs']['subject'], $email['mcs']['body'], $email['mcs']['headers']);
