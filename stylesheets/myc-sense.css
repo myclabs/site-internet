@@ -4,6 +4,11 @@ h1, h2, h3, h4, h5 {
   text-transform: none;
 }
 
+.navbar .nav .langLink {
+  font-weight: normal;
+  text-transform: none;
+}
+
 #masthead .brand {
   padding: 20px 20px 0px;
 }
