@@ -473,7 +473,7 @@ if (isset($_POST['contact-email'])) {
                             </div>
                         </div>
                     <?php endif; ?>
-					<h3>On-line demonstration</h3>
+					<h3>On-line demo</h3>
                     <form id="demo" action="#contact" method="post">
                         <div class="input-append">
                             <input type="text" name="demo-email" placeholder="Email" class="span4">

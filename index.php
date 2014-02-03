@@ -90,6 +90,7 @@ if (isset($_POST['contact-email'])) {
                 <li class=""><a href="reporting.html">Reporting</a></li> -->
                 <li class=""><a class="link-contact" href="#contact">Contact</a></li>
                 <li class=""><button class="btn btn-primary btn-normal link-demo" href="#demo">Démonstration en ligne</button></li>
+                <li class=""><a href="en" class="langLink"> English</a></li>
               </ul>
             </div>
           </div>
