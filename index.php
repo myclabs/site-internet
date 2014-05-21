@@ -8,7 +8,7 @@ if (isset($_POST['demo-email'])) {
     $headers ='Content-Type: text/plain; charset="utf-8"'."\n"; // ici on envoie le mail au format texte encodé en UTF-8
     $headers .='Content-Transfer-Encoding: 8bit'."\n"; // ici on précise qu'il y a des caractères accentués
 
-    $to = "contact@myc-sense.com";
+    $to = "contact@myc-sense.com, emmanuel.risler@myc-sense.com, irene.kryze@myc-sense.com, benjamin.bertin@myc-sense.com";
     $subject  = "Demande d'inscription à une démonstration de la part de : ".$_POST['demo-email'];
     $body = "Un utilisateur a déposé une demande d'inscription à une démonstration sur le site www.myc-sense.com.\n\n".
         "Adresse e-mail indiquée : " . $_POST['demo-email'];
@@ -24,7 +24,7 @@ if (isset($_POST['contact-email'])) {
     $userEmail = $_POST['contact-email'];
     $body = $_POST['contact-text'];
 
-    $email['mcs']['address'] = "contact@myc-sense.com";
+    $email['mcs']['address'] = "contact@myc-sense.com, emmanuel.risler@myc-sense.com, irene.kryze@myc-sense.com";
     $email['mcs']['subject']  = "Demande d'informations de la part de : ".$userEmail;
     $email['mcs']['body'] = "Un utilisateur a déposé une demande d'informations sur le site www.myc-sense.com.\n\n"
         ."Adresse e-mail indiquée : ".$userEmail."\n\n"
