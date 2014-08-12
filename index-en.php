@@ -22,26 +22,28 @@ if (isset($_POST['contact-email'])) {
     $headers .='Content-Transfer-Encoding: 8bit'."\n"; // ici on précise qu'il y a des caractères accentués
 
     $userEmail = $_POST['contact-email'];
-    $body = $_POST['contact-text'];
+    if (filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
+        $body = $_POST['contact-text'];
 
-    $email['mcs']['address'] = "contact@myc-sense.com, emmanuel.risler@myc-sense.com, irene.kryze@myc-sense.com";
-    $email['mcs']['subject']  = "Demande d'informations de la part de : ".$userEmail;
-    $email['mcs']['body'] = "Un utilisateur a déposé une demande d'informations sur le site www.myc-sense.com/en.\n\n"
-        ."Adresse e-mail indiquée : ".$userEmail."\n\n"
-        ."---------- Début du message ----------\n\n".$body."\n\n"."---------- Fin du message ----------";
-    $email['mcs']['headers'] = $headers.'From: '.$userEmail."\n".'Reply-To: '.$userEmail;
+        $email['mcs']['address'] = "contact@myc-sense.com, emmanuel.risler@myc-sense.com, irene.kryze@myc-sense.com";
+        $email['mcs']['subject']  = "Demande d'informations de la part de : ".$userEmail;
+        $email['mcs']['body'] = "Un utilisateur a déposé une demande d'informations sur le site www.myc-sense.com/en.\n\n"
+            ."Adresse e-mail indiquée : ".$userEmail."\n\n"
+            ."---------- Début du message ----------\n\n".$body."\n\n"."---------- Fin du message ----------";
+        $email['mcs']['headers'] = $headers.'From: '.$userEmail."\n".'Reply-To: '.$userEmail;
 
-    $email['user']['address'] = $userEmail;
-    $email['user']['subject'] = "Your message to My C-Sense";
-    $email['user']['body'] = "The following informations has been sent to My C-Sense.\n\n"
-        ."Email : ".$userEmail."\n\n"
-        ."---------- Message begin ----------\n\n".$body."\n\n"."---------- Message End ----------\n\n"
-        . "We will get back to you as soon as possible.";
-    $email['user']['headers'] = $headers.'From: My C-Sense <contact@myc-sense.com>'."\n".'Reply-To: My C-Sense <contact@myc-sense.com>';
-    // Envoi
-    mail($email['mcs']['address'], $email['mcs']['subject'], $email['mcs']['body'], $email['mcs']['headers']);
-    mail($email['user']['address'], $email['user']['subject'], $email['user']['body'], $email['user']['headers']);
-    $contact = true;
+        $email['user']['address'] = $userEmail;
+        $email['user']['subject'] = "Your message to My C-Sense";
+        $email['user']['body'] = "The following informations has been sent to My C-Sense.\n\n"
+            ."Email : ".$userEmail."\n\n"
+            ."---------- Message begin ----------\n\n".$body."\n\n"."---------- Message End ----------\n\n"
+            . "We will get back to you as soon as possible.";
+        $email['user']['headers'] = $headers.'From: My C-Sense <contact@myc-sense.com>'."\n".'Reply-To: My C-Sense <contact@myc-sense.com>';
+        // Envoi
+        mail($email['mcs']['address'], $email['mcs']['subject'], $email['mcs']['body'], $email['mcs']['headers']);
+        mail($email['user']['address'], $email['user']['subject'], $email['user']['body'], $email['user']['headers']);
+        $contact = true;
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -448,7 +450,7 @@ if (isset($_POST['contact-email'])) {
         <form id="contact" action="#contact" method="post">
             <fieldset>
                 <label for="contact-email">Email</label>
-                <input id="contact-email" name="contact-email" type="text" class="input-block-level">
+                <input id="contact-email" name="contact-email" type="email" class="input-block-level" required>
                 <label for="contact-text">Message</label>
                 <textarea id="contact-text" name="contact-text" class="input-block-level" rows="5"></textarea>
                 <button type="submit" class="btn">Send</button>
