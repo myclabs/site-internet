@@ -418,12 +418,37 @@ if (isset($_POST['contact-email'])) {
                 </li>
                 <li class="span2">
                     <div class="thumbnail client">
-                        <img src="images/institutionnel/insa-lyon.png" alt="INSA de Lyon" title="INSA de Lyon">
+                        <img src="images/institutionnel/insa-lyon.svg" alt="INSA de Lyon" title="INSA de Lyon">
                     </div>
                 </li>
             </ul>
         </div>
-        </article>
+    </article>
+    <article>
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span3">
+                    <a href="http://carbondb.org/" target="_blank"><img src="images/carbondb/carbonDB-logo.svg" alt="CarbonDB" title="CarbonDB"></a>
+                </div>
+                <div class="span9">
+                    <p><a href="http://carbondb.org/" target="_blank">CarbonDB</a> is a Life Cycle Assessment (LCA)
+                        database centered on greenhouse gas and energy impacts developed by My C-Sense. Its main features are:</p>
+                    <ul>
+                        <li><strong>Open acces</strong>: anybody can freely access data.</li>
+                        <li><strong>Open (semantic) language</strong>: source data are expressed in an open knowledge representation language.</li>
+                        <li><strong>Open data</strong>: anybody can download source data, use them or edit them for
+                            its own purpose.</li>
+                        <li><strong>Open collaboration</strong>: anybody can comment existing issues on data,
+                            submit new issues, or submit an improved version of source data.</li>
+                        <li><strong>Non-redundancy</strong>: most of data (elementary flows) are calculated from a minimal subset of source data.</li>
+                        <li><strong>Transparency, intelligibility, graphical interfaces</strong>: all source data
+                            should be based on publicly available references, particular emphasis is placed on accessibility, intelligibility, pedagogy.</li>
+                        <li><strong>Open source</strong>: underlying software is open source.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
     <article>
     <div class="container">
     <div class="row-fluid">

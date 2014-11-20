@@ -415,12 +415,37 @@ if (isset($_POST['contact-email'])) {
                 </li>
                 <li class="span2">
                     <div class="thumbnail client">
-                        <img src="images/institutionnel/insa-lyon.png" alt="INSA de Lyon" title="INSA de Lyon">
+                        <img src="images/institutionnel/insa-lyon.svg" alt="INSA de Lyon" title="INSA de Lyon">
                     </div>
                 </li>
             </ul>
         </div>
-        </article>
+    </article>
+    <article>
+        <div class="container">
+        <div class="row-fluid">
+            <div class="span3">
+                <a href="http://carbondb.org/" target="_blank"><img src="images/carbondb/carbonDB-logo.svg" alt="CarbonDB" title="CarbonDB"></a>
+            </div>
+            <div class="span9">
+                <p><a href="http://carbondb.org/" target="_blank">CarbonDB</a> est une base de données d'analyse de
+                    cyle de vie (carbone et énergie) portée par My C-Sense.
+                    Ses caractéristiques principales sont les suivantes.</p>
+                <ul>
+                    <li><strong>Open acces</strong> : chacun peut librement accéder aux données.</li>
+                    <li><strong>Open (semantic) language</strong> : les données sources sont exprimées dans un langage de représentation des connaissances ouvert. </li>
+                    <li><strong>Open data</strong> : chacun peut télécharger les données sources, les utiliser ou les éditer pour son propre compte.</li>
+                    <li><strong>Open collaboration</strong> : chacun peut soumettre une demande concernant les données, commenter une demande existante, ou soumettre une nouvelle version des données sources.</li>
+                    <li><strong>Non-redondance</strong> : la plupart des données (flux élémentaires) sont calculées à partir d'un ensemble minimal de données sources.</li>
+                    <li><strong>Transparence, intelligibilité, interfaces graphiques</strong> : toutes les données
+                        sources doivent s'appuyer sur des références librement accessibles, un accent particulier
+                        est mis sur l’accessibilité, l’intelligibilité, la pédagogie.</li>
+                    <li><strong>Code open source</strong> : le code sous-jacent est open source. </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </article>
     <article>
     <div class="container">
     <div class="row-fluid">
